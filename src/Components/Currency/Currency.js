@@ -28,6 +28,7 @@ const Currency = () => {
     useEffect(() => {
       setLoader(true)
       getData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
   const currencyArray = arrayOfExchange.filter(el => 
