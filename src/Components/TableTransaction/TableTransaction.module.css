@@ -1,0 +1,141 @@
+.list {
+  list-style: none;
+}
+
+.listTitle {
+  display: flex;
+  flex-direction: row;
+  background: white;
+}
+
+.listTitle p {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 11px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "HelveticaNeueCyr", sans-serif;
+  color: #282828;
+}
+
+@media screen and (max-width: 767px) {
+  .listTitle {
+    display: none;
+  }
+
+  .wrapper {
+    width: 306px;
+    margin: 0 auto;
+  }
+
+  .list {
+    padding-bottom: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    max-height: 70vh;
+    /* overflow-y: scroll; */
+  }
+
+  .list::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .list::-webkit-scrollbar-track {
+    background: #9ca2aa;
+  }
+
+  .list::-webkit-scrollbar-thumb {
+    background: #3a5374;
+  }
+
+  .list::-webkit-scrollbar-thumb:hover {
+    background: #ff6c00;
+  }
+
+  .wrapper {
+    padding: 0 20px 0 20px;
+  }
+
+  .listTitle {
+    height: 73px;
+  }
+
+  .date {
+    width: 85px;
+  }
+
+  .type {
+    width: 65px;
+  }
+
+  .category {
+    width: 125px;
+  }
+
+  .comment {
+    width: 165px;
+  }
+
+  .sum {
+    width: 105px;
+  }
+
+  .balance {
+    width: 110px;
+  }
+
+  .delete {
+    width: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    width: 855px;
+    padding: 0;
+  }
+
+  .list {
+    padding: 0;
+  }
+
+  .listTitle p {
+    padding-left: 40px;
+    font-weight: 700;
+  }
+
+  .date {
+    width: 117px;
+  }
+
+  .type {
+    width: 95px;
+  }
+
+  .category {
+    width: 134px;
+  }
+
+  .comment {
+    width: 184px;
+  }
+
+  .sum {
+    width: 144px;
+  }
+
+  .balance {
+    width: 131px;
+  }
+}
+
+.zeroTransactions {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  color: #282828;
+  font-size: 25px;
+}

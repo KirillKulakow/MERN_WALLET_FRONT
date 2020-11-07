@@ -1,0 +1,15 @@
+URL = "https://guarded-cliffs-65841.herokuapp.com/"
+
+
+================For User=====================
+Реєстрація юзера  "https://guarded-cliffs-65841.herokuapp.com/register"
+Логінізація юзера "https://guarded-cliffs-65841.herokuapp.com/login"
+LogOut юзера      "https://guarded-cliffs-65841.herokuapp.com/logout"
+
+===============For Transaction=================
+
+
+Створення транзакцій          "https://guarded-cliffs-65841.herokuapp.com/post"
+Отримання колекції транзакцій "https://guarded-cliffs-65841.herokuapp.com/get"
+Оновлення транзакції          "https://guarded-cliffs-65841.herokuapp.com/update"
+Видалення транзакції          "https://guarded-cliffs-65841.herokuapp.com/update/delete"

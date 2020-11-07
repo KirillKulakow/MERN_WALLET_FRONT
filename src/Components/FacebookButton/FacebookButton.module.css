@@ -1,0 +1,14 @@
+.facebook_button {
+  margin: auto;
+  background-image: url("../../icons/social_icon/fb.svg");
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+.facebook_button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}

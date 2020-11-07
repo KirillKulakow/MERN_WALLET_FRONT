@@ -1,0 +1,369 @@
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0000001e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 5px 5px 15px #0000004f;
+  border-radius: 6px;
+  overflow-x: scroll;
+}
+
+.HeadingContainer {
+  width: 100%;
+  background-color: #f3f3f5;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.CloceModalMobile,
+.CloceModal {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 14px;
+  /* background-color: slateblue; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300%;
+  cursor: pointer;
+}
+
+.CloceModal {
+  background-image: url(./icons/close.svg);
+}
+.CloceModal:hover {
+  background-size: 400%;
+  /* background-color: slateblue; */
+}
+
+.FormHeader {
+  padding: 21px 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #282828;
+  font-weight: bold;
+}
+.AddingForrm {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.MainFormPart,
+.FormBtnPart {
+  margin: 0 auto;
+  width: 300px;
+  border: none;
+}
+
+.RadioContainer {
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-around;
+}
+
+.FormRadio {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+}
+.Profit {
+  border-right: 2px solid #b9c9d4;
+}
+.FormRadio input[type="radio"] {
+  display: none;
+}
+.FormRadio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+.FormRadio label:before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 13px;
+  height: 13px;
+  background-image: url(./icons/circle.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Checked */
+.FormRadio input[type="radio"]:checked + label:before {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.Cost input[type="radio"]:checked + label:before {
+  background-image: url(./icons/costRadio.svg);
+}
+.Cost input[type="radio"]:checked + label {
+  color: #ff6b00;
+}
+
+.Profit input[type="radio"]:checked + label:before {
+  background-image: url(./icons/profitRadio.svg);
+}
+.Profit input[type="radio"]:checked + label {
+  color: #425c7d;
+}
+
+.CategoryCostRadio input[type="radio"]:checked + label:before,
+.CategoryCostRadio input[type="radio"]:active + label:before {
+  background-image: url(./icons/costRadio.svg);
+}
+.CategoryProfitRadio input[type="radio"]:checked + label:before,
+.CategoryProfitRadio input[type="radio"]:active + label:before {
+  background-image: url(./icons/profitRadio.svg);
+}
+.CategoryRadio {
+  justify-content: start;
+}
+
+.Input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 2px solid #b9c9d4;
+}
+
+.Input:focus {
+  outline: none;
+  border: 2px solid #b9c9d4;
+}
+
+.CategoryContainer {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.Category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.SelectHeading {
+  width: 100%;
+  padding: 6px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SelectHeading::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 10px;
+  background-image: url(./icons/downArrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CategoryList {
+  z-index: 100;
+  margin-top: 31px;
+  width: 300px;
+  padding-top: 5px;
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: fixed;
+  border: 2px solid #b9c9d4;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: #ffffff;
+}
+
+.CategoryList::-webkit-scrollbar {
+  width: 10px;
+}
+
+.CategoryList::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(105, 100, 100, 0.212);
+  border-radius: 10px;
+}
+
+.CategoryList::-webkit-scrollbar-thumb {
+  background: rgba(105, 100, 100, 0.418);
+  border-radius: 10px;
+}
+
+.CategoryList::-webkit-scrollbar-thumb:hover {
+  background: #777777;
+}
+.CategoryRadio {
+  justify-content: flex-start;
+  padding-left: 14px;
+}
+
+.InputContainer {
+  margin-bottom: 30px;
+}
+
+.SumAndDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Sum {
+  width: 140px;
+  text-align: right;
+}
+.DateContainer {
+  width: 140px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DateContainer::after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  background-image: url(../../icons/date/baseline-date_range-24px.svg);
+  background-position: center;
+  background-size: contain;
+}
+.Date {
+  text-align: center;
+  width: 85px;
+  border: none;
+}
+.Date:active,
+.Date:focus {
+  border: none;
+  outline: none;
+}
+
+.Description {
+  margin-top: 12px;
+  width: 100%;
+  height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Btn {
+  outline: none;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100%;
+  padding: 4px;
+  margin-top: 30px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 3px 1.5px rgba(58, 83, 116, 0.25));
+  background-color: #425c7d;
+  cursor: pointer;
+}
+
+.Btn:active {
+  background-color: #28384d;
+}
+
+/* Errors Styles */
+
+.ErrorsText {
+  color: rgb(243, 64, 32);
+  padding-top: 10px;
+  padding-left: 4px;
+}
+.InputError {
+  border: 2px solid #a70000;
+}
+
+@media (max-width: 767px) {
+  .Container {
+    width: 320px;
+    /* width: 100vw; */
+    height: 100vh;
+  }
+  .HeadingContainer {
+    background-color: #28384d;
+  }
+  .HeadingContainer {
+    align-items: center;
+  }
+  .CloceModal {
+    background-image: none;
+    margin: 6px;
+  }
+
+  .CloceModalMobile {
+    background-image: url(./icons/arrowLeft.svg);
+    background-size: contain;
+    margin: 6px;
+  }
+
+  .FormHeader {
+    color: #ffffff;
+  }
+  .AddingForrm {
+    /* width: 85%; */
+    height: 100%;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .Description {
+    height: 100px;
+  }
+
+  .FormBtnPart {
+    width: 100%;
+    background-color: #738397;
+    padding-bottom: 30px;
+  }
+  .Btn {
+    width: 300px;
+    background-color: #ff6b00;
+  }
+  .Btn:active {
+    background-color: #753303;
+  }
+}
+
+@media (max-width: 330px) {
+  .MainFormPart {
+    width: 280px;
+  }
+  .DateLabel {
+    width: 130px;
+  }
+  .Sum {
+    width: 130px;
+  }
+  .Btn {
+    width: 280px;
+  }
+}

@@ -1,0 +1,203 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  min-width: 312px;
+  flex-direction: column;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #284060;
+  padding: 0 6px;
+}
+
+.headLogo {
+  display: flex;
+  height: 24px;
+  width: 24px;
+  color: #8390a2;
+  background-image: url("./icons/wallet.png");
+  background-size: contain;
+}
+
+.headExit {
+  color: #8390a2;
+}
+
+.headExit_text {
+  font-family: Helvetica;
+  font-size: 15px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.headExit_icon {
+  background-image: url("./icons/logout.png");
+  display: block;
+  background-size: contain;
+}
+
+.swichers {
+  width: 100%;
+  height: 40px;
+  background-color: #3a5374;
+  display: flex;
+  padding: 0 100px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.swicher_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 25px;
+  background-color: #284060;
+  color: red;
+  border-radius: 4px;
+}
+
+.swicher_item:hover {
+  background-color: #708096;
+}
+
+.swicher_picture {
+  display: block;
+  content: none;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swicher_house {
+  background-image: url("./icons/home.png");
+}
+
+.swicher_chart {
+  background-image: url("./icons/Diagrams.png");
+}
+
+.swicher_currency {
+  background-image: url("./icons/Слой\ 1.png");
+}
+
+.exchange {
+
+  width: 100%;
+}
+
+.exHead {
+  display: flex;
+  width: 100%;
+  height: 62px;
+  background-color: #f3f6f6;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #485058;
+}
+
+.exData {
+  display: flex;
+  height: 43px;
+  border-bottom: 2px solid #f3f6f6;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Helvetica;
+  font-weight: 500;
+  font-size: 14px;
+  color: #485058;
+}
+
+.exData:hover {
+  background-color: #f3f6f6;
+}
+
+.chart {
+  display: block;
+  width: 100%;
+  height: 268px;
+  background-image: url("./icons/bg.png");
+  background-position: bottom;
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    width: 312px;
+    border-radius: 3px;
+    box-shadow: 10px 17.321px 40px 0px rgba(1, 1, 0, 0.15);
+  }
+  .chart {
+    height: 194px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .chart {
+    display: none;
+  }
+  .wrapper {
+    width: 100%;
+  }
+
+  /* .wrapper {
+    width: 354px;
+    box-shadow: 10px 17.321px 40px 0px rgba(1, 1, 0, 0.15);
+  } */
+}
+
+.lds_ring {
+ 
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* width: 80px; */
+  /* height: 80px; */
+}
+.lds_ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #708096;
+  border-radius: 50%;
+  animation: lds_ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #708096 transparent transparent transparent;
+}
+.lds_ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds_ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds_ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds_ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
